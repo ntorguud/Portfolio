@@ -214,7 +214,7 @@ img {
 }
 
 #header-inner {
-  background: url("../images/back.png") no-repeat 20% 30%/cover;
+  background: url("../images/seattle.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px #ffbc00 solid; }
 
@@ -244,47 +244,10 @@ img {
     #home-b .stats div:nth-child(even) {
       background: #ccc; }
 
-#home-c .process {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
-  text-align: center; }
-  #home-c .process-step {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 28px;
-    background: #ffbc00;
-    color: #fff;
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    line-height: 15px;
-    padding: 1rem;
-    transition: all 1s; }
-  #home-c .process-icon {
-    border-radius: 50%;
-    background: #333;
-    color: #fff;
-    padding: 2rem;
-    height: 70px;
-    width: 70px;
-    line-height: 70px;
-    text-align: center;
-    position: relative;
-    transition: all 1s; }
-    #home-c .process-icon:hover {
-      background: #ffbc00;
-      width: 90px;
-      height: 90px;
-      line-height: 90px; }
-      #home-c .process-icon:hover .process-step {
-        background: #333;
-        color: #fff; }
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: 'bioimage bio bio' 'aw1 aw2 aw3';
+  grid-template-areas: 'bioimage bio bio';
   grid-gap: 1.2rem; }
   #about-a .about-info h4 {
     margin-top: 2rem; }
@@ -299,21 +262,6 @@ img {
   border-left: 3px #ffbc00 solid;
   padding: 0.8rem; }
 
-#about-a .award-1 {
-  grid-area: aw1; }
-
-#about-a .award-2 {
-  grid-area: aw2; }
-
-#about-a .award-3 {
-  grid-area: aw3; }
-
-#about-a .award-1 .fas,
-#about-a .award-2 .fas,
-#about-a .award-3 .fas {
-  color: #ffbc00;
-  margin: 1rem; }
-
 #about-b .progress {
   overflow: hidden;
   height: 20px;
@@ -327,30 +275,9 @@ img {
     background: #ffbc00; }
 
 #about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem; }
+  float: right; }
   #about-c .about-logos img {
     width: 70%; }
-
-#about-d .testimonials {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem; }
-  #about-d .testimonials ul {
-    list-style: none;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center; }
-  #about-d .testimonials p {
-    border: 1px #ccc solid;
-    border-radius: 5px;
-    padding: 0.5rem; }
-  #about-d .testimonials img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 0.5rem; }
 
 #contact-a .text-fields {
   display: grid;
@@ -427,8 +354,6 @@ img {
     height: 10rem; }
   #home-a .specials,
   #home-b .stats,
-  #home-c .process,
-  #about-d .testimonials,
   .items {
     grid-template-columns: 1fr; }
   #home-a .specials div {
@@ -440,7 +365,7 @@ img {
   #home-b .stats div {
     padding: 2rem 0; }
   #about-a .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'aw1' 'aw2' 'aw3'; }
+    grid-template-areas: 'bioimage' 'bio'; }
   #about-c {
     display: none; }
   #contact-a .text-fields {
