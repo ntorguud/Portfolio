@@ -1,0 +1,14 @@
+// Variables
+$web-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url('../images/back.png');
+
+// Toggle text color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else { @return #fff; }
+}

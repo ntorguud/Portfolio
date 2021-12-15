@@ -1,0 +1,156 @@
+// Tablet & smaller 
+@media(max-width: 800px) {
+    #header-home {
+        height: 30rem;
+
+        .header-content {
+            padding-top: 5rem;
+        }
+    }
+}
+
+// Smart phones
+@media(max-width: 500px) {
+    #main-nav {
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #header {
+        &-home {
+            height: 10rem;
+            border-bottom: 3px $main-color solid;
+            background-position: 20% 30%;
+
+            // contentiig ustgay
+            .header-content {
+                display: none;
+            }
+        }
+
+        &-inner {
+            height: 10rem;
+        }
+    }
+
+    // Stack Grid columns
+    #home-a .specials,
+    #home-b .stats,
+    #home-c .process,
+    #about-d .testimonials,
+    .items {
+        grid-template-columns: 1fr;
+    }
+
+    // Home
+    #home {
+        &-a {
+            .specials div {
+                border-bottom: 1px $medium-color solid;
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &-b {
+            .stats div {
+                padding: 2rem 0;
+            }
+        }
+    }
+
+    // About
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas: 
+                    'bioimage'
+                    'bio'
+                    'aw1'
+                    'aw2'
+                    'aw3';
+            }
+        }
+
+        &-c {
+            display: none;
+        }
+    }
+
+    // Contact
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas: 
+                    'name'
+                    'subject'
+                    'email'
+                    'phone'
+                    'message';
+            }
+        }
+
+        &-b {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        &-c {
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            div {
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px $medium-color solid;
+
+                &:last-child {
+                    border: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    // footer 
+    #main-footer {
+        height: 7rem;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+        }
+    }
+}
+
+// Landscape 
+@media(max-height: 580px) {
+    #header-home {
+        .header-content {
+            padding-top: 3rem;
+        }
+    }
+}
+
+// Smaller phones like Iphone 5
+@media(max-height: 330px) {
+    #header-home {
+        .header-content {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}
